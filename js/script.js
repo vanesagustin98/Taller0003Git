@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var btnResultado = document.getElementById("resultado");
     var btnLimparTela = document.getElementById("limparTela");
     var btnApagarAnterior = document.getElementById("apagarAnterior");
+    var btnConvertir = document.getElementById("convertir");
 
     listenerBtn.push(document.getElementById("ponto"));
 
@@ -37,6 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     btnResultado.onclick = function () {
         verificarResulatado();
+    }
+
+    btnConvertir.onclick =  function convertir() {
+        tela.value = tela.value * 9/5 + 32
     }
 
     function verificarResulatado() {
